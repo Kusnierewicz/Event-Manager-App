@@ -1,0 +1,4 @@
+require "date"
+
+d = 2/2/09 12:44
+date = DateTime.parse(row[:regdate].gsub(/\//, ' ')) rescue DateTime.strptime(d, '%-d %-m %y %:z')
